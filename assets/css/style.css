@@ -2,9 +2,12 @@
     width: 100%;
     border-radius: 30%;
 }
-
+h1 {
+    text-shadow: 2px 1px 1px #4b00ff4f;
+}
 h2::first-letter, h3::first-letter {
     color: #4b00ff;
+    text-shadow: 1px 1px 1px purple;
 }
 .body {
     position: relative;
@@ -22,9 +25,11 @@ h2::first-letter, h3::first-letter {
     /* transition: 10s all; */
 }
 .anim.active {
-    /* top: -200px !important; */
     left: 400%;
 
 }
 
-
+::selection {
+    /* color: black; */
+    background: #be8a2c3d;
+}
