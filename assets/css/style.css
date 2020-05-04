@@ -1,0 +1,51 @@
+.avatar {
+    width: 100%;
+    border-radius: 30%;
+}
+h1 {
+    text-shadow: 2px 1px 1px #4b00ff4f;
+}
+h2::first-letter, h3::first-letter {
+    color: #4b00ff;
+    text-shadow: 1px 1px 1px purple;
+    font-style: italic;
+}
+.body {
+    position: relative;
+    overflow-x: hidden;
+}
+.anim {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    top: 0;
+    left: -100%;
+    background: rgb(255, 0, 149);
+    z-index: 99;
+    transition: 2s all;
+}
+.anim.active {
+    left: 400%;
+}
+
+::selection {
+    background: #be8a2c3d;
+}
+.facebook svg:hover {
+    fill: red
+}
+.contacts li a.facebook:hover {
+    color: #3b5998 
+}
+.contacts li a.twitter:hover {
+    color: #00aff0
+}
+.contacts li a.inst:hover {
+    color: rgb(245, 19, 151) 
+}
+object.avatar {
+    transition: 1s filter;
+}
+object.avatar:hover {
+    filter: invert(59%) sepia(33%) saturate(2855%) hue-rotate(1110deg) brightness(104%) contrast(97%);
+}
