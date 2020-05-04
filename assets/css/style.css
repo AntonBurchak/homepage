@@ -8,6 +8,7 @@ h1 {
 h2::first-letter, h3::first-letter {
     color: #4b00ff;
     text-shadow: 1px 1px 1px purple;
+    font-style: italic;
 }
 .body {
     position: relative;
@@ -22,14 +23,11 @@ h2::first-letter, h3::first-letter {
     background: rgb(255, 0, 149);
     z-index: 99;
     transition: 2s all;
-    /* transition: 10s all; */
 }
 .anim.active {
     left: 400%;
-
 }
 
 ::selection {
-    /* color: black; */
     background: #be8a2c3d;
 }
