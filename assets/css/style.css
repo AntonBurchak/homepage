@@ -31,3 +31,21 @@ h2::first-letter, h3::first-letter {
 ::selection {
     background: #be8a2c3d;
 }
+.facebook svg:hover {
+    fill: red
+}
+.contacts li a.facebook:hover {
+    color: #3b5998 
+}
+.contacts li a.twitter:hover {
+    color: #00aff0
+}
+.contacts li a.inst:hover {
+    color: rgb(245, 19, 151) 
+}
+object.avatar {
+    transition: 1s filter;
+}
+object.avatar:hover {
+    filter: invert(59%) sepia(33%) saturate(2855%) hue-rotate(1110deg) brightness(104%) contrast(97%);
+}
