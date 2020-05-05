@@ -33,3 +33,4 @@ function randColor() {
 
     return color;
 }
+
