@@ -2,7 +2,7 @@
 My very own personal website. Basically this is just a résumé.
 
 ## Looks like:
-Preview of the resume: ![here](/assets/images/dog-image.en_US.jpg)
+Preview of Trump's resume: ![here]((https://github.com/AntonBurchak/NFA-to-DFA/blob/master/dist/images/NFADFA.jpg))
 
 * Hosted on [github](https://antonburchak.github.io/homepage/)
 
