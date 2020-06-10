@@ -1,0 +1,44 @@
+:root {
+    font-size: 24px;
+}
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    
+    color: #fff;
+    background: #000;
+}
+
+.bodyWrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &-main {
+            margin: 10px 0;
+            font-size: 3rem;
+        }
+        &-first {
+            font-size: 2rem;
+        }
+        &-second {
+            
+        }
+        &-hi {
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            max-width: 100px;
+            width: 100%;
+            &:hover {
+                max-width: 100%;
+            }
+            @include button;
+        }
+    }
+}
