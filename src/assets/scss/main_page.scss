@@ -1,0 +1,52 @@
+.bodyMain {
+    &.active {
+        .bodyMain__heading-main {
+            bottom: 0;
+        }
+        
+    }
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &-wrap {
+            height: fit-content;
+            overflow: hidden;
+            position: relative;
+        }
+        &-main {
+            margin: 10px 0;
+            font-size: 3rem;
+            position: relative;
+            bottom: -102px;
+            transition: 1s bottom;
+        }
+        &-first {
+            font-size: 2rem;
+        }
+        // &-second {
+            
+        // }
+        &-hi {
+            margin: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            max-width: 100px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            p {
+                position: absolute;
+                margin: 0;
+                min-width: 300px;
+                font-size: .8rem;
+                top: calc(50% - 22px/2);
+                left: 120px;
+            }
+            &:hover {
+                max-width: 100%;
+            }
+            @include button;
+        }
+    }
+}
