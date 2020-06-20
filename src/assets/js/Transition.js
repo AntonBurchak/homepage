@@ -16,13 +16,14 @@ class Transition {
     }
     
     static moveTo(hash) {
+        const wrapper = document.querySelector(this.mainSelector);
+        wrapper.classList.add('active');
         return console.log(`moved to ${hash}`);
     }
 
     static hide(parent = document.body) {
         const wrapper = parent.querySelector(this.mainSelector);
         wrapper.classList.add('hide');
-        console.trace();
         return this.clear(parent);
     }
 };
