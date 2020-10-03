@@ -4,41 +4,34 @@
 
 body {
     font-family: 'Proxima Nova', sans-serif;
-    
     color: #fff;
     background: #000;
 }
 
 .bodyWrap {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 100vh;
+    // transition: .5s all;
     justify-content: center;
-    &__heading {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        &-main {
-            margin: 10px 0;
-            font-size: 3rem;
-        }
-        &-first {
-            font-size: 2rem;
-        }
-        &-second {
-            
-        }
-        &-hi {
-            margin: 15px 0;
-            display: flex;
-            justify-content: space-between;
-            max-width: 100px;
-            width: 100%;
-            &:hover {
-                max-width: 100%;
-            }
-            @include button;
-        }
+    width: 100vw;
+    &.hide > * {
+        filter: blur(10px);
+        transform: translateY(20px);
+        opacity: 0;
     }
+    > * {
+        transition: .5s all;
+
+    }
+}
+
+
+#test {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1rem;
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
